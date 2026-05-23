@@ -792,6 +792,10 @@ main {
 
 .form__status {
     margin: 0;
+    padding: 10px 12px;
+    border: 1px solid rgba(59, 98, 86, 0.28);
+    border-radius: 7px;
+    background: #eef7f3;
     color: var(--green);
     font-size: 14px;
     font-weight: 700;
@@ -807,6 +811,8 @@ main {
 }
 
 .form__status[data-type="error"] {
+    border-color: rgba(180, 35, 24, 0.25);
+    background: #fff1f0;
     color: #b42318;
 }
 

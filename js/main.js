@@ -8,7 +8,7 @@ const fileClearButtons = document.querySelectorAll(".file-upload__clear");
 const nav = document.querySelector(".nav");
 const menuToggle = document.querySelector(".menu-toggle");
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzhksRp0PeteXBvEX-6Tp_9nljkvmZ5es1zmMyF4QC2yxtUrXjxohj2RRUZpqpxwOXyPw/exec";
-const FORM_STUB_MODE = false;
+const FORM_STUB_MODE = false; // Установите false для реальной отправки данных на сервер
 const MAX_FILE_SIZE = 8 * 1024 * 1024;
 const MAX_FILE_NAME_LENGTH = 38;
 const ALLOWED_FILE_EXTENSIONS = ["pdf", "doc", "docx", "xls", "xlsx", "jpg", "jpeg", "png"];
@@ -104,7 +104,7 @@ nav?.querySelectorAll('a[href^="#"]').forEach((link) => {
 });
 
 window.addEventListener("resize", () => {
-    if (window.innerWidth > 850 && isMenuOpen()) {
+    if (window.innerWidth > 900 && isMenuOpen()) {
         closeMenu();
     }
 });
